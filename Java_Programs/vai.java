@@ -1,0 +1,6 @@
+public class vai {
+    public static void main(String arg[])
+    {
+        System.out.println("hello");
+    }
+}
