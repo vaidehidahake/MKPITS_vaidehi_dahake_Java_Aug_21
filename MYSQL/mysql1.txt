@@ -1,0 +1,39 @@
+1)-sql query to create a database:-
+create database mkpits123
+a)-sql query to create a table:-
+create table employee(empno int,empname varchar(20),salary int)
+sql query to insert value into a table:-
+insert into employee values(102,'raj',40000)
+sql query to view all records:-
+select * from employee.
+b)-sql query to create a table(student):-
+create table student(rollno int AutoIncreament,name varchar(20),address varchar(50),primary key(rollno) )
+sql query to insert value into a table:-
+insert into student(name,address) values('Rajendera','nagpur'),('Shruti','ramnagar'),('Kartik','sadar')
+sql query to view all records:-
+select * from student.
+----------------------------------------------------------------------
+assignment :
+create table product , customer , orders 
+insert at least 10 record in table
+write a sql query to view  all the record 
+1)table-product
+create table product(customerid int AutoIncreament,custname varchar(20),prodname varchar(20),prodprice int,
+quantity int,total int,primary key(customerid) )
+sql query to insert value into a table:-
+insert into product(custname,prodname,prodprice,quantity,total) values(11,'rishi','pen',10,4,40),
+(12,'veena','lamp',450,1,450),(13,'kartik','flowerpot',2000,1,2000),(16,'vaibhav','bag',2000,2,4000),
+(17,'pranjali','paint brush',50,4,200),(18,'reema','toolkit',12000,1,12000),
+(19,'karan','bulb',500,3,1500),(20,'Vidhya','Flower Pot',900,2,1800)
+sql query to view all records:-
+select * from product.
+
+2)table-cust_table
+create table cust_table(custno int,name varchar(20),cust_surname varchar(50),cust_address varchar(100),cust_salary int)
+sql query to insert value into a table:-
+insert into cus_table(custno,name,cust_surname,cust_address,cust_salary) VALUES(1,'ram','kapoor','delhi',80000),
+(2,'prachi','ganorkar','nagpur',20000),
+(3,'devesh','rai','kolkata',50000),(4,'arya','singh','jaipur',30000),
+(5,'ravi','nagpal','mumbai',40000),(6,'sakshi','rao','lucknow',250000),(7,'purab','mehta','surat',90000),
+(8,'riya','kapoor','shimla',35000),(9,'divya','bhelkar','kamptee',87000),(10,'vidhya','maheshwari','rajasthan',100000),
+select * from cust_table.

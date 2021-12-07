@@ -1,0 +1,66 @@
+1)Null:-
+create table emp1(id int,name varchar(20))
+insert into emp1(id) values(12)
+id name
+12 NULL
+-----
+2)Not Null
+create table emp1(id int,name varchar(20)not null)
+insert into emp1(id) values(20)
+id name
+20 
+------
+3)auto_increment 
+create table emp3(id int not null auto_increment,
+name varchar(20),primary key(id))
+insert into emp3 (name) values('riya'),('aman'),('prachi')
+id name
+1  riya
+2  aman
+3  prachi
+--------
+4)show tables
+query:-mysql>SHOW TABLES
+--------
+5)describe tables
+query:-mysql> DESCRIBE employeees
+--------
+6)MySQL ALTER Table
+a)ADD a column in the table
+create table emp3(id int not null auto_increment,
+name varchar(20),primary key(id))
+    ALTER TABLE emp3  
+    ADD age int NOT NULL
+b) Add multiple columns in the table 
+alter table emp3 add address varchar(50)not null,add salary int not null
+    ALTER TABLE emp3 
+    ADD surname varchar(100) NOT NULL  
+    AFTER address
+Select * from emp3
+------------------
+7) MODIFY column in the table
+ALTER TABLE emp3 
+MODIFY em_surname varchar(50) NULL
+-----------------
+8)DROP column in table
+ALTER TABLE emp3 
+DROP COLUMN address  
+------------------
+9)RENAME column in table
+ALTER TABLE  emp3  
+CHANGE COLUMN surname title  
+varchar(20) NOT NULL 
+--------------------
+10)RENAME table 
+    ALTER TABLE emp3  
+    RENAME TO empl3  
+---------
+11)Drop table
+    mysql> DROP TABLE  emp1
+
+
+
+
+
+
+

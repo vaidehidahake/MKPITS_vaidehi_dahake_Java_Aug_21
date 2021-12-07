@@ -1,0 +1,86 @@
+1)MySQL GROUP BY Clause with COUNT function
+SELECT address, COUNT(*)  
+FROM   officers   
+GROUP BY address; 
+---
+2)MySQL GROUP BY Clause with SUM function
+SELECT emp_name, SUM(working_hours) AS "Total working hours"  
+FROM employees  
+GROUP BY emp_name; 
+---
+3)MySQL GROUP BY Clause with MIN function
+SELECT emp_name, MIN(working_hours) AS "Minimum working hour"  
+FROM employees  
+GROUP BY emp_name;
+----
+4)MySQL GROUP BY Clause with MAX function
+SELECT emp_name, MAX (working_hours) AS "Minimum working hour"  
+FROM employees  
+GROUP BY emp_name; 
+-----
+5)MySQL GROUP BY Clause with AVG function
+SELECT emp_name, AVG(working_hours) AS "Average working hour"  
+FROM employees  
+GROUP BY emp_name; 
+---------------
+MySQL ORDER BY Clause
+SELECT *  
+FROM officers  
+WHERE address = 'Lucknow'  
+ORDER BY officer_name;
+-----------------
+MySQL HAVING Clause
+a)HAVING Clause with SUM function 
+SELECT emp_name, SUM(working_hours) AS "Total working hours"  
+FROM employees  
+GROUP BY emp_name  
+HAVING SUM(working_hours) > 5; 
+ 
+SELECT emp_name, count(working_hours) as 'total entry'
+from employees
+group by emp_name
+having count(working_hours) > 2
+-------------------------
+like clause 
+select * from people where name like 'm%' and occupation like '%er'
+select * from people where name like 'm%' or occupation like '%er'
+---------
+join
+SELECT officers.officer_name, officers.address, students.course_name  
+FROM officers   
+INNER JOIN students  
+ON officers.officer_id = students.student_id; 
+  
+select students.student_id, students.student_name,students.course_name,marks.marks
+from students inner join marks
+on students.student_id = marks.student_id
+---------
+MySQL Left Outer Join
+select students.student_id, students.student_name,students.course_name,marks.marks
+from students left outer join marks
+on students.student_id = marks.student_id
+
+SELECT  officers.officer_name, officers.address, students.course_name  
+FROM officers  
+LEFT JOIN students  
+ON officers.officer_id = students.student_id;
+
+SELECT officers.officer_name, officers.address, students.course_name, students.student_name  
+FROM officers  
+RIGHT JOIN students  
+ON officers.officer_id = students.student_id;  
+------
+MySQL Right Outer Join
+select students.student_id, students.student_name,students.course_name,marks.marks
+from students right outer join marks
+on students.student_id = marks.student_id
+  
+
+
+
+ 
+ 
+ 
+  
+ 
+  

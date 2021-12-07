@@ -1,0 +1,46 @@
+1)-MySQL INSERT Statement
+a)    CREATE TABLE people(id int,name varchar(45),
+occupation varchar(35),age int,dob Date) 
+1. For single records
+    INSERT INTO people (id, name,occupation,age)   
+    VALUES (116,'Risabh','IAS',27,'2021-04-13') 
+2. For Multiple records
+    INSERT INTO people (id, name,occupation,age)   
+    VALUES (111,'Risabh','IAS',27,'2021-04-13'),
+     (112,'Pranjali','Engineer',25,'2020-05-15')
+-------------------------------------------------
+2)-MySQL UPDATE Query
+a)Update Single Column:-
+create table trainer(id int auto_increment not null, 
+email varchar(30), course varchar(20), primary key)
+UPDATE trainer    
+SET email ='mike@tutorialandexamples.com'    
+WHERE course = 'PHP';
+SELECT * FROM trainer;      
+b)Update Multiple Columns
+UPDATE trainer    
+SET email ='mike@tutorialandexamples.com',course='JAVA'    
+WHERE id =2
+SELECT * FROM trainer 
+c)UPDATE Statement to Replace String
+UPDATE Trainer  
+SET email = REPLACE(email,'@gmail.com','@mkpits.com')  
+WHERE course_name = 'PHP' 
+SELECT * FROM trainer  
+---------------------------------------------------
+3)MySQL DELETE Statement
+a)delete from database:-
+DELETE FROM employeees WHERE empno=8
+b)MySQL DELETE and LIMIT Clause
+DELETE FROM employeees ORDER BY name LIMIT 3 
+----------------------------------------------------
+4)MySQL SELECT Statement
+a)SELECT empname FROM employee 
+b)SELECT empno,empname,salary FROM employee 
+c)SELECT * FROM employee 
+
+
+ 
+ 
+          
+     
