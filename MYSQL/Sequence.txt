@@ -1,0 +1,31 @@
+1) CREATE TABLE insect(id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (id),
+    name VARCHAR(30) NOT NULL, 
+    date DATE NOT NULL,
+    origin VARCHAR(30) NOT NULL)
+INSERT INTO insect (id,name,date,origin) VALUES
+ (NULL,'housefly','2001-09-10','kitchen'),
+ (NULL,'millipede','2001-09-10','driveway'),
+ (NULL,'grasshopper','2001-09-10','front yard')
+--------
+2) To Drop Column:-
+mysql> ALTER TABLE insect DROP id;
+---------
+3) To add Column:-
+ALTER TABLE insect
+ADD id INT UNSIGNED NOT NULL AUTO_INCREMENT FIRST,
+ADD PRIMARY KEY (id)
+--------
+4)  CREATE TABLE insect(id INT UNSIGNED NOT NULL AUTO_INCREMENT=100,
+    PRIMARY KEY (id),
+    name VARCHAR(30) NOT NULL, 
+    date DATE NOT NULL,
+    origin VARCHAR(30) NOT NULL)
+ALTER TABLE insect AUTO_INCREMENT = 100
+INSERT INTO insect (id,name,date,origin) VALUES
+ (NULL,'housefly','2001-09-10','kitchen'),
+ (NULL,'millipede','2001-09-10','driveway'),
+ (NULL,'grasshopper','2001-09-10','front yard')
+
+
+

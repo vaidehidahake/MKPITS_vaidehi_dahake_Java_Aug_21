@@ -1,0 +1,31 @@
+MySQL CREATE INDEX Statement
+create table student(studentid int not null AUTO_INCREMENT,firstname varchar(20),
+lastname varchar(50),class varchar(20),age int,primary key(studentid))
+
+insert into student(firstname,lastname,class,age) values('Mark','Boucher','EE',22),
+('Michael','Clark','CS',18),('Peter',Fleming','CS',22),
+('Virat','Kohli','EC',23),('Martin','Taybu','EE',24),
+('John','Tucker','EE',25)
+1)To return the result
+SELECT studentid, firstname, 
+mysql>lastname FROM student WHERE class = 'CS'
+
+studentid	firstname	lastname	
+2               Michael          Clark
+3               Peter            Fleming
+6               John             Tucker
+----------------------------------------
+2)Explain
+id  select_type   table   type   possible_keys  key   key_len  ref  rows  Extra
+1   SIMPLE       student  ALL       NULL        NULL   NULL    NULL  6    Using where
+--------------------------------------------------------------------------------------
+3)How to create Index
+ query:-CREATE INDEX class ON student (class)
+query:-EXPLAIN SELECT studentid, firstname, lastname FROM student WHERE class = 'CS';
+output:- 
+id  select_type   table   type   possible_keys  key   key_len  ref  rows  Extra
+1   SIMPLE       student  ALL       NULL        NULL   NULL    NULL  6    Using where 
+-------------------------------------------------------------------------------------
+4)To Show Indexes
+query:-    mysql> SHOW INDEXES FROM student;  
+
