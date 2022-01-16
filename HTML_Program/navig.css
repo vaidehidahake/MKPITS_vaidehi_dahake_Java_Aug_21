@@ -1,0 +1,46 @@
+h1{
+    margin:0px;
+     padding:0px;
+     background-color:Gray;
+     height:90px;
+    line-height:90px;
+     width:1333px;
+    font-size:40px;
+    
+   }
+   
+ div.label
+ {
+ height:450px;
+ width:250px;
+ background-color:Yellow;
+ float:left;
+ }
+div.a
+ {
+ color:Black;
+display:block;
+ }
+ div.section
+ {
+ height:450px;
+ width:1083px;
+float:left;
+ background-color:Pink;
+ }
+ div.third
+  {
+  margin:0px;
+       padding:0px;
+       background-color:Gray;
+       height:90px;
+      line-height:10px;
+       width:1333px;
+    font-size:40px;
+    float:left;
+ }
+ 
+ 
+ 
+   
+   

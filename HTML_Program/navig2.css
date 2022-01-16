@@ -1,0 +1,54 @@
+h1
+{
+     margin:0px;
+     padding:0px;
+     background-color:Red;
+     height:100px;
+    line-height:90px;
+     width:1333px;
+    font-size:40px;
+    font-family: "Times New Roman", Times, serif;
+   
+}
+div.menu
+{
+      margin-top:90px;
+      margin-left:300px;
+      background-color:Teal;
+           height:430px;
+            width:230px;
+            float:left;
+           border:Black;
+           line-height:20px;
+         
+   
+}
+
+div.sec
+{
+ margin-top:90px;
+ margin-left:29px;
+      
+background-color:Teal;
+    height:430px;
+    width:230px;
+      float:left;
+      border:Black;
+     line-height:20px;
+    
+}
+
+
+
+div.thr
+{
+margin-top:90px;
+ margin-left:29px;
+background-color:Teal;
+     height:430px;
+     width:230px;
+      float:left;
+      border:Black;
+      line-height:20px;
+      
+}

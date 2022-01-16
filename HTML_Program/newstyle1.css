@@ -1,0 +1,24 @@
+div.ram{
+     background-color:Purple;
+     height:120px;
+      width:120px;
+      float:left;
+      margin:20px;
+     border:Black;
+     }
+     div#first
+     {
+     background-color:Olive;
+     }
+     div#sec
+          {
+          background-color:Lime;
+     }
+     div#first
+          {
+          background-color:Olive;
+     }
+     div#sec
+          {
+          background-color:Lime;
+     }
