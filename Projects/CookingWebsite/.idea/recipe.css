@@ -1,0 +1,114 @@
+.rec,h3
+{
+    margin-top:0px;
+    padding:0px;
+    background-color:darkblue;
+    height:40px;
+    line-height:40px;
+    width:1202px;
+    font-size:25px;
+    text-align:center;
+    color: snow;
+    font-family: cursive;
+}
+.one
+{
+    margin-top:15px;
+    padding: 0px;
+    margin-left:45px;
+    background-color:lightgrey;
+    height:250px;
+    line-height:3px;
+    width:300px;
+    font-size:15px;
+    text-align:center;
+    font-family:cursive;
+    float: left;
+    border:2px solid  black;
+    /*border-radius: 10px;*/
+}
+
+.two
+{
+    margin-top:15px;
+    padding: 0px;
+    margin-left:110px;
+    background-color:lightgrey;
+    height:250px;
+    line-height:3px;
+    width:300px;
+    font-size:15px;
+    text-align:center;
+    font-family:cursive;
+    float: left;
+    border:2px solid  black;
+    /*border-radius: 10px;*/
+}
+
+.three
+{
+    margin-top:15px;
+    padding: 0px;
+    margin-left:110px;
+    background-color:lightgrey;
+    height:250px;
+    line-height:5px;
+    width:300px;
+    font-size:15px;
+    text-align:center;
+    font-family:cursive;
+    float: left;
+    border:2px solid  black;
+    /*border-radius: 10px;*/
+}
+
+.four
+{
+    margin-top:15px;
+    padding: 0px;
+    margin-left:45px;
+    background-color:lightgrey;
+    height:250px;
+    line-height:3px;
+    width:300px;
+    font-size:15px;
+    text-align:center;
+    font-family:cursive;
+    float: left;
+    border:2px solid  black;
+    /*border-radius: 10px;*/
+}
+
+.five
+{
+    margin-top:20px;
+    padding: 0px;
+    margin-left:110px;
+    background-color:lightgrey;
+    height:250px;
+    line-height:3px;
+    width:300px;
+    font-size:15px;
+    text-align:center;
+    font-family:cursive;
+    float: left;
+    border:2px solid  black;
+    /*border-radius: 10px;*/
+}
+
+.six
+{
+    margin-top:20px;
+    padding: 0px;
+    margin-left:110px;
+    background-color:lightgrey;
+    height:250px;
+    line-height:3px;
+    width:300px;
+    font-size:15px;
+    text-align:center;
+    font-family:cursive;
+    float: left;
+    border:2px solid  black;
+    /*border-radius: 10px;*/
+}

@@ -1,0 +1,67 @@
+.thr h1
+{
+    margin-top:10px;
+    padding:0px;
+    line-height:10px;
+    font-size:25px;
+    text-align:center;
+    color:maroon;
+    font-family: cursive;
+
+
+}
+.thr p
+{
+    margin-top:10px;
+    padding:0px;
+    line-height:10px;
+    font-size:15px;
+    text-align:center;
+    font-family: cursive;
+
+}
+ul.mul
+{
+    margin-left: 20px;
+    line-height: 150%;
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.thr li
+{
+    text-align: left;
+    color: navy;
+    font-weight: 900;
+}
+.mid p
+{
+    text-align: left;
+    font-size: 20px;
+    color: darkgreen;
+    font-weight: 900;
+}
+.thr p
+{
+    text-align: left;
+    font-size: 20px;
+    color: darkgreen;
+    font-weight: 900;
+}
+.step p
+{
+    margin-top:0px;
+    padding:0px;
+    line-height:25px;
+    font-size:15px;
+    text-align: left;
+    color: maroon;
+    font-weight: 900;
+    font-family: cursive;
+
+}
