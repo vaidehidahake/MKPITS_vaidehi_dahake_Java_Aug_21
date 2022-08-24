@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script>
+        function view(n)
+        {
+            document.getElementById("result").value+=n
+        }
+
+        function calculate()
+        {
+
+        let a=document.getElementById("result").value
+        let b=eval(a)
+
+            document.getElementById("result").value=b
+        }
+        function clr()
+        {
+            document.getElementById("result").value=""
+        }
+        </script>
+
+
+    <!-- for styling-->
+    <style>
+        input[type="button"]
+        {
+            background-color: chocolate;
+
+            border:solid black 1px;
+            width: 100%;
+        }
+        input[type="text"] {
+            background-color: white;
+            border: solid black 1px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<!-- for creating table-->
+<table border="1">
+    <tr>
+        <td colspan="3"><input type="text" id="result"> </td>
+        <td><input type="button" value="C" onclick="clr()"/></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="1" onclick="view('1')"/></td>
+        <td><input type="button" value="2" onclick="view('2')"/></td>
+        <td><input type="button" value="3" onclick="view('3')"/></td>
+        <td><input type="button" value="/" onclick="view('/')"/></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="4" onclick="view('4')"/></td>
+        <td><input type="button" value="5" onclick="view('5')"/></td>
+        <td><input type="button" value="6" onclick="view('6')"/></td>
+        <td><input type="button" value="-" onclick="view('-')"/></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="7" onclick="view('7')"/></td>
+        <td><input type="button" value="8" onclick="view('8')"/></td>
+        <td><input type="button" value="9" onclick="view('9')"/></td>
+        <td><input type="button" value="+" onclick="view('+')"/></td>
+    </tr>
+
+    <tr>
+        <td><input type="button" value="." onclick="view('.')"/></td>
+        <td><input type="button" value="0" onclick="view('0')"/></td>
+        <td><input type="button" value="=" onclick="calculate()"/></td>
+        <td><input type="button" value="*" onclick="view('*')"/></td>
+    </tr>
+
+
+
+
+</table>
+
+</body>
+</html>
